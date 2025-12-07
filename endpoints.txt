@@ -1,0 +1,15 @@
+--------------------Create a Table--------------------------------------------------------------------------------------------------
+POST:
+https://ia-lab.crm.dynamics.com/api/data/v9.2/EntityDefinitions
+
+--------------------Create a Relationship-------------------------------------------------------------------------------------------
+POST:
+https://ia-lab.crm.dynamics.com/api/data/v9.2/EntityDefinitions
+
+--------------------Update Lookup Column--------------------------------------------------------------------------------------------
+PUT:
+https://ia-lab.crm.dynamics.com/api/data/v9.2/EntityDefinitions(LogicalName='ia_child')/Attributes(LogicalName='ia_parentid')
+
+--------------------Create a Column-------------------------------------------------------------------------------------------------
+POST:
+https://ia-lab.crm.dynamics.com/api/data/v9.2/EntityDefinitions(LogicalName='ia_child')/Attributes
