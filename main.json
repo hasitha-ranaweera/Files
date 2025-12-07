@@ -1,0 +1,1203 @@
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.BigIntAttributeMetadata",
+    "SchemaName": "ia_bigint",
+    "LogicalName": "ia_bigint",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Big Integer",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Big integer number field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsFilterable": true,
+    "IsSearchable": true,
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "SourceType": 0,
+    "ExternalName": null
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.BooleanAttributeMetadata",
+    "SchemaName": "ia_boolean",
+    "LogicalName": "ia_boolean",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Boolean",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Boolean Yes/No",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "OptionSet": {
+        "@odata.type": "Microsoft.Dynamics.CRM.BooleanOptionSetMetadata",
+        "TrueOption": {
+            "Value": 1,
+            "Label": {
+                "LocalizedLabels": [
+                    {
+                        "Label": "Yes",
+                        "LanguageCode": 1033
+                    }
+                ]
+            }
+        },
+        "FalseOption": {
+            "Value": 0,
+            "Label": {
+                "LocalizedLabels": [
+                    {
+                        "Label": "No",
+                        "LanguageCode": 1033
+                    }
+                ]
+            }
+        },
+        "IsCustomOptionSet": true
+    },
+    "DefaultValue": false,
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "IsFilterable": true,
+    "IsSearchable": true,
+    "SourceType": 0,
+    "ExternalName": null
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.EntityMetadata",
+    "SchemaName": "IA_Child",
+    "LogicalName": "ia_child",
+    "DisplayName": {
+        "@odata.type": "Microsoft.Dynamics.CRM.Label",
+        "LocalizedLabels": [
+            {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "IA Child",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "DisplayCollectionName": {
+        "@odata.type": "Microsoft.Dynamics.CRM.Label",
+        "LocalizedLabels": [
+            {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "IA Children",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "@odata.type": "Microsoft.Dynamics.CRM.Label",
+        "LocalizedLabels": [
+            {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "A child table linked to IA Parent.",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "OwnershipType": "UserOwned",
+    "HasActivities": false,
+    "HasNotes": true,
+    "IsActivity": false,
+    "IsAvailableOffline": true,
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsEnabledForCharts": true,
+    "IsValidForAdvancedFind": true,
+    "IsConnectionsEnabled": {
+        "Value": true
+    },
+    "IsMailMergeEnabled": {
+        "Value": false
+    },
+    "IsQuickCreateEnabled": true,
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsDuplicateDetectionEnabled": {
+        "Value": false
+    },
+    "IsDocumentManagementEnabled": false,
+    "IsBusinessProcessEnabled": false,
+    "Attributes": [
+        {
+            "@odata.type": "Microsoft.Dynamics.CRM.StringAttributeMetadata",
+            "SchemaName": "IA_ChildKey",
+            "LogicalName": "ia_childkey",
+            "DisplayName": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                    {
+                        "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                        "Label": "Child Key",
+                        "LanguageCode": 1033
+                    }
+                ]
+            },
+            "Description": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                    {
+                        "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                        "Label": "Auto-generated child key identifier",
+                        "LanguageCode": 1033
+                    }
+                ]
+            },
+            "AttributeType": "String",
+            "AttributeTypeName": {
+                "Value": "StringType"
+            },
+            "IsPrimaryName": true,
+            "AutoNumberFormat": "CH-{SEQNUM:6}",
+            "MaxLength": 100,
+            "FormatName": {
+                "Value": "Text"
+            },
+            "RequiredLevel": {
+                "Value": "ApplicationRequired",
+                "CanBeChanged": true,
+                "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+            },
+            "IsCustomizable": {
+                "Value": true
+            },
+            "IsAuditEnabled": {
+                "Value": true
+            },
+            "IsSearchable": true,
+            "IsFilterable": true,
+            "IsSortableEnabled": {
+                "Value": true
+            },
+            "IsGlobalFilterEnabled": {
+                "Value": true
+            },
+            "SourceType": 0,
+            "IsValidForAdvancedFind": {
+                "Value": true
+            },
+            "IsSecured": false,
+            "ExternalName": null
+        }
+    ]
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.PicklistAttributeMetadata",
+    "SchemaName": "IA_Choice",
+    "LogicalName": "ia_choice",
+    "AttributeType": "Picklist",
+    "AttributeTypeName": {
+        "Value": "PicklistType"
+    },
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Choice",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "This is a sample local option set column.",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None",
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    },
+    "IsAuditEnabled": {
+        "Value": true,
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsSecured": false,
+    "IsValidForAdvancedFind": {
+        "Value": true,
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "IsFilterable": true,
+    "SourceType": 0,
+    "OptionSet": {
+        "IsGlobal": false,
+        "Name": "IA_Choice_OptionSet",
+        "Options": [
+            {
+                "Value": 100000000,
+                "Label": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Option A",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                },
+                "Description": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Description A",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                }
+            },
+            {
+                "Value": 100000001,
+                "Label": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Option B",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                },
+                "Description": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Description B",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "DefaultFormValue": 100000000,
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "ExternalName": null,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsLogical": false,
+    "IsRequiredForForm": false
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.DateTimeAttributeMetadata",
+    "SchemaName": "IA_Date",
+    "LogicalName": "ia_date",
+    "AttributeType": "DateTime",
+    "AttributeTypeName": {
+        "Value": "DateTimeType"
+    },
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Date",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Date field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None",
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    },
+    "DateTimeBehavior": {
+        "Value": "DateOnly"
+    },
+    "Format": "DateOnly",
+    "ImeMode": "Auto",
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsFilterable": true,
+    "IsSearchable": true,
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "SourceType": 0,
+    "ExternalName": null
+}
+{
+  "@odata.type": "Microsoft.Dynamics.CRM.DateTimeAttributeMetadata",
+  "SchemaName": "IA_DateTime",
+  "LogicalName": "ia_datetime",
+  "AttributeType": "DateTime",
+  "AttributeTypeName": {
+    "Value": "DateTimeType"
+  },
+  "DisplayName": {
+    "LocalizedLabels": [
+      {
+        "Label": "Date Time",
+        "LanguageCode": 1033
+      }
+    ]
+  },
+  "Description": {
+    "LocalizedLabels": [
+      {
+        "Label": "Date and time field",
+        "LanguageCode": 1033
+      }
+    ]
+  },
+  "RequiredLevel": {
+    "Value": "None",
+    "CanBeChanged": true,
+    "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+  },
+  "DateTimeBehavior": {
+    "Value": "UserLocal"
+  },
+  "Format": "DateAndTime",
+  "ImeMode": "Auto",
+  "IsAuditEnabled": {
+    "Value": true
+  },
+  "IsCustomizable": {
+    "Value": true
+  },
+  "IsSecured": true,
+  "IsGlobalFilterEnabled": {
+    "Value": true
+  },
+  "IsFilterable": true,
+  "IsSearchable": true,
+  "IsSortableEnabled": {
+    "Value": true
+  },
+  "SourceType": 0,
+  "ExternalName": null
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.DecimalAttributeMetadata",
+    "SchemaName": "ia_decimal",
+    "LogicalName": "ia_decimal",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Decimal",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Decimal number field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "MinValue": 0,
+    "MaxValue": 1000000,
+    "Precision": 4,
+    "ImeMode": "Auto",
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsFilterable": true,
+    "IsSearchable": true,
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "SourceType": 0,
+    "ExternalName": null
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.DoubleAttributeMetadata",
+    "SchemaName": "ia_double",
+    "LogicalName": "ia_double",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Double",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Double precision number field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "MinValue": 0,
+    "MaxValue": 1000000,
+    "Precision": 2,
+    "ImeMode": "Auto",
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsFilterable": true,
+    "IsSearchable": true,
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "SourceType": 0,
+    "ExternalName": null
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.FileAttributeMetadata",
+    "SchemaName": "ia_file",
+    "LogicalName": "ia_file",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "File",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "File upload column.",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None",
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    },
+    "IsAuditEnabled": {
+        "Value": true,
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsValidForAdvancedFind": {
+        "Value": false,
+        "CanBeChanged": false,
+        "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "IsSecured": false,
+    "IsRetrievable": true,
+    "IsFilterable": false,
+    "IsSearchable": false,
+    "IsLogical": false,
+    "IsValidForForm": true,
+    "IsRequiredForForm": false,
+    "SourceType": 0,
+    "MaxSizeInKB": 10240,
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "ExternalName": null
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.ImageAttributeMetadata",
+    "SchemaName": "ia_image",
+    "LogicalName": "ia_image",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Image",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Image upload column.",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None",
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    },
+    "IsAuditEnabled": {
+        "Value": true,
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsValidForAdvancedFind": {
+        "Value": false,
+        "CanBeChanged": false,
+        "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "IsSecured": false,
+    "IsRetrievable": true,
+    "IsFilterable": false,
+    "IsSearchable": false,
+    "IsLogical": false,
+    "IsValidForForm": true,
+    "IsRequiredForForm": false,
+    "SourceType": 0,
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "ExternalName": null
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.IntegerAttributeMetadata",
+    "SchemaName": "ia_integer",
+    "LogicalName": "ia_integer",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Integer",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Integer number field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "MinValue": 0,
+    "MaxValue": 1000000,
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsFilterable": true,
+    "IsSearchable": true,
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "SourceType": 0,
+    "ExternalName": null
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+    "LogicalName": "ia_parentid",
+    "SchemaName": "IA_ParentId",
+    "AttributeType": "Lookup",
+    "AttributeTypeName": {
+        "Value": "LookupType"
+    },
+    "DisplayName": {
+        "@odata.type": "Microsoft.Dynamics.CRM.Label",
+        "LocalizedLabels": [
+            {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Parent",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "@odata.type": "Microsoft.Dynamics.CRM.Label",
+        "LocalizedLabels": [
+            {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Select the related parent record",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "ApplicationRequired"
+    },
+    "Targets": [
+        "ia_parent"
+    ],
+    "IsCustomAttribute": true,
+    "IsManaged": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": true,
+    "IsValidForUpdate": true,
+    "IsValidForRead": true,
+    "IsCustomizable": {
+        "Value": true,
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifycustomization"
+    },
+    "IsRetrievable": true,
+    "IsValidODataAttribute": true,
+    "IsLogical": false,
+    "SourceType": 0,
+    "IsValidForAdvancedFind": {
+        "Value": true,
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifyadvancedfindsettings"
+    },
+    "IsSecured": true,
+    "IsAuditEnabled": {
+        "Value": true,
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifyauditing"
+    },
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "IsFilterable": true,
+    "IsSearchable": true,
+    "IntroducedVersion": "1.0",
+    "IsRenameable": {
+        "Value": true
+    },
+    "ExternalName": null
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.MoneyAttributeMetadata",
+    "SchemaName": "ia_money",
+    "LogicalName": "ia_money",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Money",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Money field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None",
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    },
+    "MinValue": 0,
+    "MaxValue": 1000000,
+    "Precision": 2,
+    "PrecisionSource": 0,
+    "FormulaDefinition": null,
+    "ImeMode": "Auto",
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsFilterable": true,
+    "IsSearchable": true,
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "IsValidForRead": true,
+    "SourceType": 0,
+    "ExternalName": null,
+    "IntroducedVersion": "1.0.0.0"
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.MultiSelectPicklistAttributeMetadata",
+    "SchemaName": "IA_MultiChoice",
+    "LogicalName": "ia_multichoice",
+    "AttributeType": "Picklist",
+    "AttributeTypeName": {
+        "Value": "MultiSelectPicklistType"
+    },
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Multi Choice",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "This is a sample multi-select local option set column.",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None",
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    },
+    "IsAuditEnabled": {
+        "Value": true,
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsValidForAdvancedFind": {
+        "Value": true,
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "IsFilterable": true,
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "IsLogical": false,
+    "IsRequiredForForm": false,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "ExternalName": null,
+    "SourceType": 0,
+    "OptionSet": {
+        "IsGlobal": false,
+        "Name": "IA_MultiChoice_OptionSet",
+        "Options": [
+            {
+                "Value": 100000000,
+                "Label": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Red",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                },
+                "Description": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Red color",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                }
+            },
+            {
+                "Value": 100000001,
+                "Label": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Blue",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                },
+                "Description": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Blue color",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                }
+            },
+            {
+                "Value": 100000002,
+                "Label": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Green",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                },
+                "Description": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Green color",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.MemoAttributeMetadata",
+    "SchemaName": "ia_memo",
+    "LogicalName": "ia_memo",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Memo Text",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Multiline text field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "MaxLength": 2000,
+    "FormatName": {
+        "Value": "TextArea"
+    },
+    "ImeMode": "Auto",
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "SourceType": 0,
+    "ExternalName": null
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.EntityMetadata",
+    "SchemaName": "IA_Parent",
+    "LogicalName": "ia_parent",
+    "DisplayName": {
+        "@odata.type": "Microsoft.Dynamics.CRM.Label",
+        "LocalizedLabels": [
+            {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "IA Parent",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "DisplayCollectionName": {
+        "@odata.type": "Microsoft.Dynamics.CRM.Label",
+        "LocalizedLabels": [
+            {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "IA Parents",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "@odata.type": "Microsoft.Dynamics.CRM.Label",
+        "LocalizedLabels": [
+            {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "A parent table used to test all Dataverse column types.",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "OwnershipType": "UserOwned",
+    "HasActivities": false,
+    "HasNotes": true,
+    "IsActivity": false,
+    "IsAvailableOffline": true,
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsEnabledForCharts": true,
+    "IsValidForAdvancedFind": true,
+    "IsConnectionsEnabled": {
+        "Value": true
+    },
+    "IsMailMergeEnabled": {
+        "Value": false
+    },
+    "IsQuickCreateEnabled": true,
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsDuplicateDetectionEnabled": {
+        "Value": false
+    },
+    "IsDocumentManagementEnabled": false,
+    "IsBusinessProcessEnabled": false,
+    "Attributes": [
+        {
+            "@odata.type": "Microsoft.Dynamics.CRM.StringAttributeMetadata",
+            "SchemaName": "IA_ParentKey",
+            "LogicalName": "ia_parentkey",
+            "DisplayName": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                    {
+                        "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                        "Label": "Parent Key",
+                        "LanguageCode": 1033
+                    }
+                ]
+            },
+            "Description": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                    {
+                        "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                        "Label": "Auto-generated parent key identifier",
+                        "LanguageCode": 1033
+                    }
+                ]
+            },
+            "AttributeType": "String",
+            "AttributeTypeName": {
+                "Value": "StringType"
+            },
+            "IsPrimaryName": true,
+            "AutoNumberFormat": "PA-{SEQNUM:6}",
+            "MaxLength": 100,
+            "FormatName": {
+                "Value": "Text"
+            },
+            "RequiredLevel": {
+                "Value": "ApplicationRequired",
+                "CanBeChanged": true,
+                "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+            },
+            "IsCustomizable": {
+                "Value": true
+            },
+            "IsAuditEnabled": {
+                "Value": true
+            },
+            "IsSearchable": true,
+            "IsFilterable": true,
+            "IsSortableEnabled": {
+                "Value": true
+            },
+            "IsGlobalFilterEnabled": {
+                "Value": true
+            },
+            "SourceType": 0,
+            "IsValidForAdvancedFind": {
+                "Value": true
+            },
+            "IsSecured": false,
+            "ExternalName": null
+        }
+    ]
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata",
+    "SchemaName": "ia_parent_ia_child",
+    "ReferencedEntity": "ia_parent",
+    "ReferencedAttribute": "ia_parentid",
+    "ReferencingEntity": "ia_child",
+    "CascadeConfiguration": {
+        "Assign": "NoCascade",
+        "Delete": "Cascade",
+        "Merge": "NoCascade",
+        "Reparent": "NoCascade",
+        "Share": "NoCascade",
+        "Unshare": "NoCascade"
+    },
+    "IsCustomizable": {
+        "Value": true,
+        "CanBeChanged": true,
+        "ManagedPropertyLogicalName": "canmodifycustomization"
+    },
+    "IsManaged": false,
+    "IsValidForAdvancedFind": true,
+    "IsCustomRelationship": true,
+    "ReferencedEntityNavigationPropertyName": "IA_Child",
+    "ReferencingEntityNavigationPropertyName": "IA_Parent",
+    "AssociatedMenuConfiguration": {
+        "Behavior": "UseCollectionName",
+        "Group": "Details",
+        "Label": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+                {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "IA Children",
+                    "LanguageCode": 1033
+                }
+            ]
+        },
+        "Order": 10000
+    },
+    "Lookup": {
+        "AttributeType": "Lookup",
+        "SchemaName": "ia_parentid",
+        "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+                {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "Parent",
+                    "LanguageCode": 1033
+                }
+            ]
+        },
+        "RequiredLevel": {
+            "Value": "ApplicationRequired"
+        },
+        "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+                {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "Select the related parent record",
+                    "LanguageCode": 1033
+                }
+            ]
+        }
+    }
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "SchemaName": "ia_string",
+    "LogicalName": "ia_string",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "String",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Sample string field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "MaxLength": 200,
+    "FormatName": {
+        "Value": "Text"
+    },
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "SourceType": 0,
+    "ExternalName": null
+}
