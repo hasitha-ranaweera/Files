@@ -1,0 +1,421 @@
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.BooleanAttributeMetadata",
+    "SchemaName": "ia_calculated_boolean",
+    "LogicalName": "ia_calculated_boolean",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Calculated Boolean",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Sample calculated field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "OptionSet": {
+        "@odata.type": "Microsoft.Dynamics.CRM.BooleanOptionSetMetadata",
+        "TrueOption": {
+            "Value": 1,
+            "Label": {
+                "LocalizedLabels": [
+                    {
+                        "Label": "Yes",
+                        "LanguageCode": 1033
+                    }
+                ]
+            }
+        },
+        "FalseOption": {
+            "Value": 0,
+            "Label": {
+                "LocalizedLabels": [
+                    {
+                        "Label": "No",
+                        "LanguageCode": 1033
+                    }
+                ]
+            }
+        },
+        "IsCustomOptionSet": true
+    },
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "SourceType": 3,
+    "FormulaDefinition": "ThisRecord.ia_integer < 50",
+    "ExternalName": null,
+    "IntroducedVersion": "1.0.0.0",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "IsValidForAdvancedFind": {
+        "Value": true
+    }
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.DateTimeAttributeMetadata",
+    "SchemaName": "ia_calculated_date",
+    "LogicalName": "ia_calculated_date",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Calculated Date",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Sample calculated field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "Format": "DateOnly",
+    "ImeMode": null,
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "SourceType": 3,
+    "FormulaDefinition": "DateAdd(UTCNow(), 7, TimeUnit.Days)",
+    "ExternalName": null,
+    "IntroducedVersion": "1.0.0.0",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "IsValidForAdvancedFind": {
+        "Value": true
+    }
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.DateTimeAttributeMetadata",
+    "SchemaName": "ia_calculated_datetime",
+    "LogicalName": "ia_calculated_datetime",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Calculated Date Time",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Sample calculated field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "Format": "DateAndTime",
+    "ImeMode": null,
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "SourceType": 3,
+    "FormulaDefinition": "DateAdd(UTCNow(), 7, TimeUnit.Days)",
+    "ExternalName": null,
+    "IntroducedVersion": "1.0.0.0",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "IsValidForAdvancedFind": {
+        "Value": true
+    }
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.DecimalAttributeMetadata",
+    "SchemaName": "ia_calculated_decimal",
+    "LogicalName": "ia_calculated_decimal",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Calculated Decimal",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Sample calculated field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "MinValue": 0.0,
+    "MaxValue": 1000000000.0,
+    "Precision": 2,
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "SourceType": 3,
+    "FormulaDefinition": "(ThisRecord.Integer + 10)/2.5",
+    "ExternalName": null,
+    "IntroducedVersion": "1.0.0.0",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "IsValidForAdvancedFind": {
+        "Value": true
+    }
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.IntegerAttributeMetadata",
+    "SchemaName": "ia_calculated_number",
+    "LogicalName": "ia_calculated_number",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Calculated Number",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Sample calculated field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "MinValue": 0,
+    "MaxValue": 100,
+    "Format": "None",
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "SourceType": 3,
+    "FormulaDefinition": "ThisRecord.ia_integer + 10",
+    "ExternalName": null,
+    "IntroducedVersion": "1.0.0.0",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "IsValidForAdvancedFind": {
+        "Value": true
+    }
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.PicklistAttributeMetadata",
+    "SchemaName": "ia_calculated_option_set",
+    "LogicalName": "ia_calculated_option_set",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Calculated Option Set",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Sample calculated field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "SourceType": 3,
+    "OptionSet": {
+        "IsGlobal": false,
+        "Name": "IA_Calculated_OptionSet",
+        "Options": [
+            {
+                "Value": 100000000,
+                "Label": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Option C",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                },
+                "Description": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Description C",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                }
+            },
+            {
+                "Value": 100000001,
+                "Label": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Option D",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                },
+                "Description": {
+                    "LocalizedLabels": [
+                        {
+                            "Label": "Description D",
+                            "LanguageCode": 1033
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "FormulaDefinition": "If(ThisRecord.Integer < 50, 'Choice (IA Children)'.'Option A', 'Choice (IA Children)'.'Option B')",
+    "ExternalName": null,
+    "IntroducedVersion": "1.0.0.0",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "IsValidForAdvancedFind": {
+        "Value": true
+    }
+}
+{
+    "@odata.type": "Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "SchemaName": "ia_calculated_text",
+    "LogicalName": "ia_calculated_text",
+    "DisplayName": {
+        "LocalizedLabels": [
+            {
+                "Label": "Calculated Text",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "Description": {
+        "LocalizedLabels": [
+            {
+                "Label": "Sample calculated field",
+                "LanguageCode": 1033
+            }
+        ]
+    },
+    "RequiredLevel": {
+        "Value": "None"
+    },
+    "MaxLength": 200,
+    "FormatName": {
+        "Value": "Text"
+    },
+    "ImeMode": "Auto",
+    "IsAuditEnabled": {
+        "Value": true
+    },
+    "IsCustomizable": {
+        "Value": true
+    },
+    "IsSecured": false,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "IsGlobalFilterEnabled": {
+        "Value": true
+    },
+    "IsSortableEnabled": {
+        "Value": true
+    },
+    "SourceType": 3,
+    "FormulaDefinition": "Concatenate( Text(ThisRecord.ia_integer, \"0\"), \"XXX\" )",
+    "ExternalName": null,
+    "IntroducedVersion": "1.0.0.0",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "IsValidForAdvancedFind": {
+        "Value": true
+    }
+}
